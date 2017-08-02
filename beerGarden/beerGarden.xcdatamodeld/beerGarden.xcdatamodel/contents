@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13196.5" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Imagen" representedClassName="Imagen" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="toObjeto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Objeto" inverseName="toImagen" inverseEntity="Objeto" syncable="YES"/>
+    </entity>
+    <entity name="Objeto" representedClassName="Objeto" syncable="YES">
+        <attribute name="alcohol" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toImagen" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Imagen" inverseName="toObjeto" inverseEntity="Imagen" syncable="YES"/>
+        <relationship name="toPuntuacion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Puntuacion" inverseName="toObjeto" inverseEntity="Puntuacion" syncable="YES"/>
+        <relationship name="toTipo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tipo" inverseName="toObjeto" inverseEntity="Tipo" syncable="YES"/>
+    </entity>
+    <entity name="Puntuacion" representedClassName="Puntuacion" syncable="YES">
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="toObjeto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Objeto" inverseName="toPuntuacion" inverseEntity="Objeto" syncable="YES"/>
+    </entity>
+    <entity name="Tipo" representedClassName="Tipo" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toObjeto" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Objeto" inverseName="toTipo" inverseEntity="Objeto" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Objeto" positionX="-342" positionY="-171" width="128" height="163"/>
+        <element name="Puntuacion" positionX="-47" positionY="-93" width="128" height="73"/>
+        <element name="Tipo" positionX="-110" positionY="33" width="128" height="73"/>
+        <element name="Imagen" positionX="-90" positionY="-192" width="128" height="73"/>
+    </elements>
 </model>

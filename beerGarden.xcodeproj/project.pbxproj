@@ -13,6 +13,17 @@
 		DB5C4AC31F309E2D00E9C795 /* beerGarden.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AC11F309E2D00E9C795 /* beerGarden.xcdatamodeld */; };
 		DB5C4AC51F309E2D00E9C795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5C4AC41F309E2D00E9C795 /* Assets.xcassets */; };
 		DB5C4AC81F309E2D00E9C795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5C4AC61F309E2D00E9C795 /* LaunchScreen.storyboard */; };
+		DB5C4AD71F30A26C00E9C795 /* Objeto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4ACF1F30A26C00E9C795 /* Objeto+CoreDataClass.swift */; };
+		DB5C4AD81F30A26C00E9C795 /* Objeto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AD01F30A26C00E9C795 /* Objeto+CoreDataProperties.swift */; };
+		DB5C4AD91F30A26C00E9C795 /* Imagen+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AD11F30A26C00E9C795 /* Imagen+CoreDataClass.swift */; };
+		DB5C4ADA1F30A26C00E9C795 /* Imagen+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AD21F30A26C00E9C795 /* Imagen+CoreDataProperties.swift */; };
+		DB5C4ADB1F30A26C00E9C795 /* Puntuacion+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AD31F30A26C00E9C795 /* Puntuacion+CoreDataClass.swift */; };
+		DB5C4ADC1F30A26C00E9C795 /* Puntuacion+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AD41F30A26C00E9C795 /* Puntuacion+CoreDataProperties.swift */; };
+		DB5C4ADD1F30A26C00E9C795 /* Tipo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AD51F30A26C00E9C795 /* Tipo+CoreDataClass.swift */; };
+		DB5C4ADE1F30A26C00E9C795 /* Tipo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AD61F30A26C00E9C795 /* Tipo+CoreDataProperties.swift */; };
+		DB5C4AE31F30AF9900E9C795 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AE21F30AF9900E9C795 /* MaterialView.swift */; };
+		DB5C4AE51F30B4C900E9C795 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C4AE41F30B4C900E9C795 /* ItemCell.swift */; };
+		DB5D1C5D1F314C69002E71FD /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5D1C5C1F314C69002E71FD /* ItemDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		DB5C4AC41F309E2D00E9C795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5C4AC71F309E2D00E9C795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5C4AC91F309E2D00E9C795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5C4ACF1F30A26C00E9C795 /* Objeto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Objeto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB5C4AD01F30A26C00E9C795 /* Objeto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Objeto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB5C4AD11F30A26C00E9C795 /* Imagen+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Imagen+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB5C4AD21F30A26C00E9C795 /* Imagen+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Imagen+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB5C4AD31F30A26C00E9C795 /* Puntuacion+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Puntuacion+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB5C4AD41F30A26C00E9C795 /* Puntuacion+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Puntuacion+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB5C4AD51F30A26C00E9C795 /* Tipo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tipo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB5C4AD61F30A26C00E9C795 /* Tipo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tipo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB5C4AE21F30AF9900E9C795 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		DB5C4AE41F30B4C900E9C795 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		DB5D1C5C1F314C69002E71FD /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +78,10 @@
 		DB5C4AB91F309E2D00E9C795 /* beerGarden */ = {
 			isa = PBXGroup;
 			children = (
+				DB5C4AE11F30AF7F00E9C795 /* View */,
+				DB5C4ADF1F30A27500E9C795 /* Model */,
 				DB5C4ABA1F309E2D00E9C795 /* AppDelegate.swift */,
-				DB5C4ABC1F309E2D00E9C795 /* ViewController.swift */,
+				DB5D1C5B1F314C3D002E71FD /* Controller */,
 				DB5C4ABE1F309E2D00E9C795 /* Main.storyboard */,
 				DB5C4AC41F309E2D00E9C795 /* Assets.xcassets */,
 				DB5C4AC61F309E2D00E9C795 /* LaunchScreen.storyboard */,
@@ -65,6 +89,47 @@
 				DB5C4AC11F309E2D00E9C795 /* beerGarden.xcdatamodeld */,
 			);
 			path = beerGarden;
+			sourceTree = "<group>";
+		};
+		DB5C4ADF1F30A27500E9C795 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C4ACF1F30A26C00E9C795 /* Objeto+CoreDataClass.swift */,
+				DB5C4AD11F30A26C00E9C795 /* Imagen+CoreDataClass.swift */,
+				DB5C4AD31F30A26C00E9C795 /* Puntuacion+CoreDataClass.swift */,
+				DB5C4AD51F30A26C00E9C795 /* Tipo+CoreDataClass.swift */,
+				DB5C4AE01F30A27A00E9C795 /* Generated */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB5C4AE01F30A27A00E9C795 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C4AD01F30A26C00E9C795 /* Objeto+CoreDataProperties.swift */,
+				DB5C4AD21F30A26C00E9C795 /* Imagen+CoreDataProperties.swift */,
+				DB5C4AD41F30A26C00E9C795 /* Puntuacion+CoreDataProperties.swift */,
+				DB5C4AD61F30A26C00E9C795 /* Tipo+CoreDataProperties.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		DB5C4AE11F30AF7F00E9C795 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C4AE21F30AF9900E9C795 /* MaterialView.swift */,
+				DB5C4AE41F30B4C900E9C795 /* ItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB5D1C5B1F314C3D002E71FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C4ABC1F309E2D00E9C795 /* ViewController.swift */,
+				DB5D1C5C1F314C69002E71FD /* ItemDetailsVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +203,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5C4AE51F30B4C900E9C795 /* ItemCell.swift in Sources */,
+				DB5C4AD81F30A26C00E9C795 /* Objeto+CoreDataProperties.swift in Sources */,
+				DB5C4ADE1F30A26C00E9C795 /* Tipo+CoreDataProperties.swift in Sources */,
+				DB5C4ADD1F30A26C00E9C795 /* Tipo+CoreDataClass.swift in Sources */,
+				DB5C4AE31F30AF9900E9C795 /* MaterialView.swift in Sources */,
+				DB5C4AD71F30A26C00E9C795 /* Objeto+CoreDataClass.swift in Sources */,
 				DB5C4ABD1F309E2D00E9C795 /* ViewController.swift in Sources */,
+				DB5C4ADB1F30A26C00E9C795 /* Puntuacion+CoreDataClass.swift in Sources */,
+				DB5D1C5D1F314C69002E71FD /* ItemDetailsVC.swift in Sources */,
 				DB5C4ABB1F309E2D00E9C795 /* AppDelegate.swift in Sources */,
+				DB5C4AD91F30A26C00E9C795 /* Imagen+CoreDataClass.swift in Sources */,
 				DB5C4AC31F309E2D00E9C795 /* beerGarden.xcdatamodeld in Sources */,
+				DB5C4ADC1F30A26C00E9C795 /* Puntuacion+CoreDataProperties.swift in Sources */,
+				DB5C4ADA1F30A26C00E9C795 /* Imagen+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +394,7 @@
 				DB5C4ACE1F309E2D00E9C795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
