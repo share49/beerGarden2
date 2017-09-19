@@ -100,8 +100,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
             self.stylePicker.reloadAllComponents()
             
         } catch {
-            
-            //Handle the error
+            debugPrint(error)
         }
     }
     

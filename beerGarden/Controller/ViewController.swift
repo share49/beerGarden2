@@ -92,24 +92,24 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         let fetchRequest: NSFetchRequest<Objeto> = Objeto.fetchRequest()
         let dateSort = NSSortDescriptor(key: "created", ascending: false)
-        let priceSort = NSSortDescriptor(key: "price", ascending: true)
-        //let titleSort = NSSortDescriptor(key: "title", ascending: true)
-        let ratingSort = NSSortDescriptor(key: "rating", ascending: true)
-        let styleSort = NSSortDescriptor(key: "type", ascending: true)
+        let priceSort = NSSortDescriptor(key: "price", ascending: false)
+//        let titleSort = NSSortDescriptor(key: "title", ascending: true)
+//        let ratingSort = NSSortDescriptor(key: "rating", ascending: true)
+//        let styleSort = NSSortDescriptor(key: "type", ascending: true)
         
         if segment.selectedSegmentIndex == 0 {
             
             fetchRequest.sortDescriptors = [dateSort]
+//
+//        } else if segment.selectedSegmentIndex == 1 {
+//
+//            fetchRequest.sortDescriptors = [ratingSort]
+//
+//        } else if segment.selectedSegmentIndex == 2 {
+//
+//            fetchRequest.sortDescriptors = [styleSort]
             
         } else if segment.selectedSegmentIndex == 1 {
-            
-            fetchRequest.sortDescriptors = [ratingSort]
-            
-        } else if segment.selectedSegmentIndex == 2 {
-            
-            fetchRequest.sortDescriptors = [styleSort]
-            
-        } else if segment.selectedSegmentIndex == 3 {
             
             fetchRequest.sortDescriptors = [priceSort]
             
@@ -142,12 +142,11 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         
         tableView.beginUpdates()
-        
     }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.endUpdates()
         
+        tableView.endUpdates()
     }
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
@@ -156,12 +155,14 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
             
         case.insert:
             if let indexPath = newIndexPath {
+                
                 tableView.insertRows(at: [indexPath], with: .fade)
             }
             break
             
         case.delete:
             if let indexPath = indexPath {
+                
                 tableView.deleteRows(at: [indexPath], with: .fade)
             }
             break
@@ -176,9 +177,11 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         case.move:
             if let indexPath = indexPath {
+                
                 tableView.deleteRows(at: [indexPath], with: .fade)
             }
             if let indexPath = newIndexPath {
+                
                 tableView.insertRows(at: [indexPath], with: .fade)
             }
             break
@@ -190,7 +193,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         let item = Objeto(context: context)
         item.title = "Macbook Pro"
         item.price = 1800
-        item.alcohol = 5.6
+        item.alcohol = 0.0
         
         let item2 = Objeto(context: context)
         item2.title = "Estrella Galicia"
@@ -203,6 +206,5 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         item3.alcohol = 7.4
         
         ad.saveContext()
-        
     }
 }
