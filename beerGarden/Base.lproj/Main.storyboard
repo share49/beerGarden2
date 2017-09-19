@@ -262,12 +262,19 @@
                                     <action selector="savePressed:" destination="j3i-sq-NoG" eventType="touchUpInside" id="d1x-2g-ojO"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEF-3Q-9jN">
+                                <rect key="frame" x="194" y="349" width="165" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="NTz-ux-3WB"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="q8O-UY-VxB" firstAttribute="centerY" secondItem="Zys-qc-MAl" secondAttribute="centerY" id="3qx-P8-eec"/>
                             <constraint firstItem="uvA-PT-T4a" firstAttribute="leading" secondItem="5LF-JQ-ZwP" secondAttribute="leading" constant="16" id="CJe-DS-MHw"/>
                             <constraint firstItem="lm1-CB-LkV" firstAttribute="top" secondItem="Zys-qc-MAl" secondAttribute="bottom" constant="20" id="FrY-7G-dao"/>
+                            <constraint firstItem="AEF-3Q-9jN" firstAttribute="top" secondItem="Cbn-HJ-dLF" secondAttribute="bottom" constant="8" id="G3O-4u-zsb"/>
                             <constraint firstItem="Zys-qc-MAl" firstAttribute="top" secondItem="5LF-JQ-ZwP" secondAttribute="top" constant="16" id="K6r-wu-LkY"/>
                             <constraint firstItem="5LF-JQ-ZwP" firstAttribute="trailing" secondItem="q8H-p9-SrZ" secondAttribute="trailing" constant="16" id="LKR-6w-dWD"/>
                             <constraint firstItem="5LF-JQ-ZwP" firstAttribute="trailing" secondItem="NbH-y3-Pmt" secondAttribute="trailing" constant="16" id="O5d-Aw-y4P"/>
@@ -280,6 +287,7 @@
                             <constraint firstItem="lm1-CB-LkV" firstAttribute="leading" secondItem="5LF-JQ-ZwP" secondAttribute="leading" constant="16" id="eGY-Ub-fAG"/>
                             <constraint firstItem="NbH-y3-Pmt" firstAttribute="top" secondItem="q8H-p9-SrZ" secondAttribute="bottom" constant="20" id="eSP-iP-hhd"/>
                             <constraint firstItem="5LF-JQ-ZwP" firstAttribute="bottom" secondItem="uvA-PT-T4a" secondAttribute="bottom" constant="40" id="h0z-Xd-T5H"/>
+                            <constraint firstItem="5LF-JQ-ZwP" firstAttribute="trailing" secondItem="AEF-3Q-9jN" secondAttribute="trailing" constant="16" id="hRx-n5-Eer"/>
                             <constraint firstItem="q8H-p9-SrZ" firstAttribute="top" secondItem="vT3-rm-HgG" secondAttribute="bottom" constant="20" id="hS7-fp-yP4"/>
                             <constraint firstItem="l9H-Ta-eJ4" firstAttribute="leading" secondItem="5LF-JQ-ZwP" secondAttribute="leading" constant="16" id="iXw-39-d14"/>
                             <constraint firstItem="vT3-rm-HgG" firstAttribute="leading" secondItem="Zys-qc-MAl" secondAttribute="trailing" constant="8" id="kpJ-Nv-js1"/>

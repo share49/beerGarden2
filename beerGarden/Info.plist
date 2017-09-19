@@ -43,5 +43,7 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>We need to access the camara roll</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Access to camera</string>
 </dict>
 </plist>
